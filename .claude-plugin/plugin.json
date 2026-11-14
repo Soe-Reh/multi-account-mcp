@@ -1,0 +1,15 @@
+{
+  "name": "multi-account-mcp",
+  "displayName": "Multi-account email",
+  "version": "1.0.1",
+  "description": "Connect all your email accounts to your AI at once. A local MCP server for Gmail, Yahoo, iCloud and any IMAP account.",
+  "license": "MIT",
+  "keywords": [
+    "email",
+    "imap",
+    "gmail",
+    "yahoo",
+    "multi-account",
+    "mcp"
+  ]
+}

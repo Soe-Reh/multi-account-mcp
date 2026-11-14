@@ -1,0 +1,73 @@
+{
+  "name": "multi-account-mcp",
+  "mcpName": "io.github.Soe-Reh/multi-account-mcp",
+  "version": "1.0.1",
+  "description": "Connect all your email accounts to your AI at once. A local MCP server for Gmail, Yahoo, iCloud and any IMAP account.",
+  "license": "MIT",
+  "author": "Soe Reh",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Soe-Reh/multi-account-mcp.git"
+  },
+  "homepage": "https://github.com/Soe-Reh/multi-account-mcp#readme",
+  "bugs": "https://github.com/Soe-Reh/multi-account-mcp/issues",
+  "type": "module",
+  "keywords": [
+    "mcp",
+    "mcp-server",
+    "model-context-protocol",
+    "email",
+    "imap",
+    "gmail",
+    "yahoo",
+    "multi-account",
+    "claude",
+    "cursor"
+  ],
+  "bin": {
+    "multi-account-mcp": "dist/cli/index.js"
+  },
+  "files": [
+    "dist",
+    "!dist/**/*.d.ts",
+    "!dist/**/*.map",
+    ".claude-plugin",
+    ".mcp.json",
+    "skills",
+    "README.md",
+    "LICENSE"
+  ],
+  "engines": {
+    "node": ">=20.19"
+  },
+  "scripts": {
+    "build": "tsc -p . && node scripts/check-bin.mjs",
+    "test": "vitest run",
+    "typecheck": "tsc -p . --noEmit",
+    "prepublishOnly": "npm run typecheck && npm run build && npm test"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.32.2",
+    "@napi-rs/canvas": "^1.1.1",
+    "@napi-rs/keyring": "^2.1.2",
+    "html-to-text": "^10.0.1",
+    "imapflow": "^2.11.0",
+    "jszip": "^3.10.2",
+    "mailparser": "^3.14.3",
+    "mammoth": "^1.13.0",
+    "nodemailer": "^10.5.0",
+    "unpdf": "^2.2.0",
+    "zod": "^4.6.7"
+  },
+  "devDependencies": {
+    "@types/html-to-text": "^9.0.4",
+    "@types/mailparser": "^3.9.0",
+    "@types/node": "^26.6.6",
+    "@types/nodemailer": "^8.0.2",
+    "@types/smtp-server": "^3.5.13",
+    "hoodiecrow-imap": "^3.3.1",
+    "smtp-server": "^3.21.4",
+    "typescript": "^7.0.2",
+    "vitest": "^5.1.0"
+  }
+}

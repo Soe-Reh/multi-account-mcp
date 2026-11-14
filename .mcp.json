@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "multi-account-mcp": {
+      "command": "npx",
+      "args": ["-y", "multi-account-mcp", "serve"]
+    }
+  }
+}

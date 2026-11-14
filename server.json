@@ -1,0 +1,27 @@
+{
+  "$schema": "https://static.modelcontextprotocol.io/schemas/2025-09-29/server.schema.json",
+  "name": "io.github.Soe-Reh/multi-account-mcp",
+  "title": "Multi-account email",
+  "description": "Search, read and draft across all your email accounts at once. Gmail, Yahoo, iCloud, IMAP.",
+  "repository": {
+    "url": "https://github.com/Soe-Reh/multi-account-mcp",
+    "source": "github"
+  },
+  "version": "1.0.1",
+  "packages": [
+    {
+      "registryType": "npm",
+      "identifier": "multi-account-mcp",
+      "version": "1.0.1",
+      "transport": {
+        "type": "stdio"
+      },
+      "packageArguments": [
+        {
+          "type": "positional",
+          "value": "serve"
+        }
+      ]
+    }
+  ]
+}

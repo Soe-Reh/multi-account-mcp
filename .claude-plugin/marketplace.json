@@ -1,0 +1,14 @@
+{
+  "name": "multi-account-mcp",
+  "description": "Connect all your email accounts to your AI at once. A local MCP server for Gmail, Yahoo, iCloud and any IMAP account.",
+  "owner": {
+    "name": "multi-account-mcp contributors"
+  },
+  "plugins": [
+    {
+      "name": "multi-account-mcp",
+      "source": "./",
+      "description": "Connect all your email accounts to your AI at once. A local MCP server for Gmail, Yahoo, iCloud and any IMAP account."
+    }
+  ]
+}
